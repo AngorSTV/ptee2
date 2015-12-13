@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+ <html lang='ru'>
+ <head>
+ <title>Результаты поиска эксплоитов.</title>
+ <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+ </head>
+<body>
+<h2>Результаты поиска эксплоитов.</h2>
+<h5>PTEE version 2.5.0 build 16</h5>
+<h5>Дата генерации отчёта: Sat Mar 07 17:43:07 MSK 2015</h5>
+<h3>Всего найдено:7</h3>
+<br><b>CVE-2011-0156</b> CVSS base null CVSS temp null<br><br>
+National Vulnerability Database: <a href='http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0156'>Vulnerability Summary for CVE-2011-0156</a><br><br>
+Exploit status <b>Excellent<br>
+ Link </b><a href='https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/rails_xml_yaml_code_exec.rb'>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/rails_xml_yaml_code_exec.rb</a><br>
+<b>Module Name:</b> exploit/multi/http/rails_xml_yaml_code_exec<br>
+<b>Module Description: </b>This module exploits a remote code execution vulnerability in the XML request processor of the Ruby on Rails application framework. This vulnerability allows an attacker to instantiate a remote object, which in turn can be used to execute any ruby code remotely in the context of the application. This module has been tested across multiple versions of RoR 3.x and RoR 2.x The technique used by this module requires the target to be running a fairly recent version of Ruby 1.9 (since 2011 or so). Applications using Ruby 1.8 may still be exploitable using the init_with() method, but this has not been demonstrated.<br><br>
+<b>Hosts:</b><br>
+<hr>
+<br><b>CVE-2012-3993</b> CVSS base null CVSS temp null<br><br>
+National Vulnerability Database: <a href='http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3993'>Vulnerability Summary for CVE-2012-3993</a><br><br>
+Exploit status <b>Excellent<br>
+ Link </b><a href='https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/browser/firefox_proto_crmfrequest.rb'>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/browser/firefox_proto_crmfrequest.rb</a><br>
+<b>Module Name:</b> exploit/multi/browser/firefox_proto_crmfrequest<br>
+<b>Module Description: </b>On versions of Firefox from 5.0 to 15.0.1, the InstallTrigger global, when given invalid input, would throw an exception that did not have an __exposedProps__ property set. By re-setting this property on the exception object's prototype, the chrome-based defineProperty method is made available. With the defineProperty method, functions belonging to window and document can be overriden with a function that gets called from chrome-privileged context. From here, another vulnerability in the crypto.generateCRMFRequest function is used to "peek" into the context's private scope. Since the window does not have a chrome:// URL, the insecure parts of Components.classes are not available, so instead the AddonManager API is invoked to silently install a malicious plugin.<br><br>
+<b>Hosts:</b><br>
+<hr>
+<br><b>CVE-2013-0757</b> CVSS base null CVSS temp null<br><br>
+National Vulnerability Database: <a href='http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0757'>Vulnerability Summary for CVE-2013-0757</a><br><br>
+Exploit status <b>Excellent<br>
+ Link </b><a href='https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/browser/firefox_svg_plugin.rb'>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/browser/firefox_svg_plugin.rb</a><br>
+<b>Module Name:</b> exploit/multi/browser/firefox_svg_plugin<br>
+<b>Module Description: </b>This exploit gains remote code execution on Firefox 17 and 17.0.1, provided the user has installed Flash. No memory corruption is used. First, a Flash object is cloned into the anonymous content of the SVG "use" element in the <body> (CVE-2013-0758). From there, the Flash object can navigate a child frame to a URL in the chrome:// scheme. Then a separate exploit (CVE-2013-0757) is used to bypass the security wrapper around the child frame's window reference and inject code into the chrome:// context. Once we have injection into the chrome execution context, we can write the payload to disk, chmod it (if posix), and then execute. Note: Flash is used here to trigger the exploit but any Firefox plugin with script access should be able to trigger it.<br><br>
+<b>Hosts:</b><br>
+<hr>
+<br><b>CVE-2013-0758</b> CVSS base null CVSS temp null<br><br>
+National Vulnerability Database: <a href='http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0758'>Vulnerability Summary for CVE-2013-0758</a><br><br>
+Exploit status <b>Excellent<br>
+ Link </b><a href='https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/browser/firefox_svg_plugin.rb'>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/browser/firefox_svg_plugin.rb</a><br>
+<b>Module Name:</b> exploit/multi/browser/firefox_svg_plugin<br>
+<b>Module Description: </b>This exploit gains remote code execution on Firefox 17 and 17.0.1, provided the user has installed Flash. No memory corruption is used. First, a Flash object is cloned into the anonymous content of the SVG "use" element in the <body> (CVE-2013-0758). From there, the Flash object can navigate a child frame to a URL in the chrome:// scheme. Then a separate exploit (CVE-2013-0757) is used to bypass the security wrapper around the child frame's window reference and inject code into the chrome:// context. Once we have injection into the chrome execution context, we can write the payload to disk, chmod it (if posix), and then execute. Note: Flash is used here to trigger the exploit but any Firefox plugin with script access should be able to trigger it.<br><br>
+<b>Hosts:</b><br>
+<hr>
+<br><b>CVE-2013-0782</b> CVSS base null CVSS temp null<br><br>
+National Vulnerability Database: <a href='http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0782'>Vulnerability Summary for CVE-2013-0782</a><br><br>
+Exploit status <b>Normal<br>
+ Link </b><a href='https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/scada/yokogawa_bkesimmgr_bof.rb'>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/scada/yokogawa_bkesimmgr_bof.rb</a><br>
+<b>Module Name:</b> exploit/windows/scada/yokogawa_bkesimmgr_bof<br>
+<b>Module Description: </b>This module exploits an stack based buffer overflow on Yokogawa CS3000. The vulnerability exists in the BKESimmgr.exe service when handling specially crafted packets, due to an insecure usage of memcpy, using attacker controlled data as the size count. This module has been tested successfully in Yokogawa CS3000 R3.08.50 over Windows XP SP3 and Windows 2003 SP2.<br><br>
+<b>Hosts:</b><br>
+<hr>
+<br><b>CVE-2013-0803</b> CVSS base null CVSS temp null<br><br>
+National Vulnerability Database: <a href='http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0803'>Vulnerability Summary for CVE-2013-0803</a><br><br>
+Exploit status <b>Excellent<br>
+ Link </b><a href='https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/polarcms_upload_exec.rb'>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/polarcms_upload_exec.rb</a><br>
+<b>Module Name:</b> exploit/multi/http/polarcms_upload_exec<br>
+<b>Module Description: </b>This module exploits a file upload vulnerability found in PolarBear CMS By abusing the upload.php file, a malicious user can upload a file to a temp directory without authentication, which results in arbitrary code execution.<br><br>
+<b>Hosts:</b><br>
+<hr>
+<br><b>CVE-2013-0810</b> CVSS base null CVSS temp null<br><br>
+National Vulnerability Database: <a href='http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0810'>Vulnerability Summary for CVE-2013-0810</a><br><br>
+Exploit status <b>Excellent<br>
+ Link </b><a href='https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/fileformat/ms13_071_theme.rb'>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/fileformat/ms13_071_theme.rb</a><br>
+<b>Module Name:</b> exploit/windows/fileformat/ms13_071_theme<br>
+<b>Module Description: </b>This module exploits a vulnerability mainly affecting Microsoft Windows XP and Windows 2003. The vulnerability exists in the handling of the Screen Saver path, in the [boot] section. An arbitrary path can be used as screen saver, including a remote SMB resource, which allows for remote code execution when a malicious .theme file is opened, and the "Screen Saver" tab is viewed. The code execution is also triggered if the victim installs the malicious theme and stays away from the computer, when Windows tries to display the screensaver.<br><br>
+<b>Hosts:</b><br>
+<hr>
+</body>
+ </html>
